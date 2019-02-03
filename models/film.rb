@@ -44,4 +44,9 @@ class Film
     return results
   end
 
+  def self.map_items(data)
+    result = data.map{|film| Film.new(film)}
+    return result
+  end
+
 end
