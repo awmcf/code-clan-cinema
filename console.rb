@@ -29,9 +29,9 @@ film_2.save()
 
 ticket_1 = Ticket.new({'customer_id' => '94', 'film_id' => '60'})
 ticket_1.save()
-ticket_2 = Ticket.new({'customer_id' => '73', 'film_id' => '61'})
+ticket_2 = Ticket.new({'customer_id' => '73', 'film_id' => '96'})
 ticket_2.save()
-ticket_3 = Ticket.new({'customer_id' => '94', 'film_id' => '61'})
+ticket_3 = Ticket.new({'customer_id' => '94', 'film_id' => '96'})
 ticket_3.save()
 
 # ticket_1.customer_id = 24
