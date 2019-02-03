@@ -12,4 +12,9 @@ class Ticket
     @film_id = options['film_id'].to_i
   end
 
+  def self.delete_all()
+    sql = "DELETE FROM tickets"
+    SqlRunner.run(sql)
+  end
+
 end
