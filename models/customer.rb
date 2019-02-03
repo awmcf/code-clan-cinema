@@ -1,5 +1,6 @@
 require_relative('film.rb')
 require_relative('ticket.rb')
+require_relative('../db/sql_runner.rb')
 
 class Customer
 
@@ -16,5 +17,12 @@ class Customer
     sql = "DELETE FROM customers"
     SqlRunner.run(sql)
   end
-  
+
+  def save()
+    sql = "INSERT INTO customers (name, funds) VALUES ($1, $2) RETURNING id"
+    values = [@name, @funds]
+    customer = SqlRunner.run(sql, values).first
+    @id = customer['id'].to_i
+  end
+
 end
