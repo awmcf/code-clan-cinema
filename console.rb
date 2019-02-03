@@ -27,15 +27,15 @@ film_2.update()
 
 film_1.delete()
 
-ticket_1 = Ticket.new({'customer_id' => '24', 'film_id' => '22'})
-ticket_1.save()
-ticket_2 = Ticket.new({'customer_id' => '25', 'film_id' => '26'})
-ticket_2.save()
-
-ticket_1.customer_id = 24
-ticket_1.update()
-
-ticket_1.delete()
+# ticket_1 = Ticket.new({'customer_id' => '58', 'film_id' => '46'})
+# ticket_1.save()
+# ticket_2 = Ticket.new({'customer_id' => '25', 'film_id' => '26'})
+# ticket_2.save()
+#
+# ticket_1.customer_id = 24
+# ticket_1.update()
+#
+# ticket_1.delete()
 
 binding.pry
 nil
